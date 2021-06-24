@@ -1,0 +1,42 @@
+@media screen and ( max-width: 1070px )
+  html, body
+    font-size: $fz*0.9
+
+@media screen and ( max-width: 992px )
+  html, body
+    font-size: $fz*0.7
+
+@media screen and ( max-width: 768px )
+  html, body
+    font-size: $fz*0.5
+
+  .header
+    &__phones
+      flex-direction: column
+      align-items: end
+
+  .form
+    &__img, &__name
+      display: none
+    &__policy
+      & label
+        font-size: $fz
+    &__input
+      width: 90%
+      margin-left: auto
+      margin-right: auto
+    & form
+      & input, textarea
+        width: 90%
+        margin-left: auto
+        margin-right: auto
+  .callback
+    &:hover::after
+      display: none
+
+@media screen and ( max-width: 576px )
+  h1
+    font-size: 3.5rem
+  h2
+    font-size: 2rem
+// @media screen and ( max-width: 320px )
