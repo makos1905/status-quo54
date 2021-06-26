@@ -49,3 +49,22 @@ $(document).ready(function () {
     var heroTopAll = $('.hero').css("padding-top", heightHeaderForHero);
   });
 });
+
+//Табы
+$('#tab-services').on('click', function () {
+  $('#content-services').removeClass('hidden');
+  $('#content-price').addClass('hidden');
+  $('#content-contacts').addClass('hidden');
+});
+
+$('#tab-price').on('click', function () {
+  $('#content-services').addClass('hidden');
+  $('#content-price').removeClass('hidden');
+  $('#content-contacts').addClass('hidden');
+});
+
+$('#tab-contacts').on('click', function () {
+  $('#content-services').addClass('hidden');
+  $('#content-price').addClass('hidden');
+  $('#content-contacts').removeClass('hidden');
+});

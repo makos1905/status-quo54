@@ -134,23 +134,82 @@ main {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main input[type=radio] {
+  display: none;
 }
 
 .section {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding: 2rem 2%;
 }
 
 .section__title {
+  font-size: 3rem;
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
   padding-bottom: 2rem;
+}
+
+.nav {
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.nav__menu {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.nav__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.nav__item h2 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 1rem;
+}
+
+.nav__icon {
+  width: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav__icon svg {
+  width: 100%;
 }
 
 .wraper {
@@ -212,6 +271,9 @@ main {
 
 .header__contacts {
   width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
@@ -301,10 +363,17 @@ main {
 }
 
 .services {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-top: 0;
 }
 
 .services__service {
@@ -357,6 +426,93 @@ main {
   font-size: 1.6rem;
   line-height: 2;
   margin-bottom: 1.2;
+}
+
+.price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #102c54;
+  font-size: 1.6rem;
+  padding-top: 0;
+  margin-bottom: 2rem;
+}
+
+.price__content {
+  width: 100%;
+  background-color: #d1d1d1;
+  padding: 1rem;
+  padding-right: 5%;
+  border: 0.5rem solid #102c54;
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.price__title {
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.price__type {
+  margin-bottom: 3rem;
+}
+
+.price__type:last-child {
+  margin-bottom: 0;
+}
+
+.price__position {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  border-bottom: 2px solid #102c54;
+}
+
+.price__position:last-child {
+  border: none;
+}
+
+.price__name {
+  line-height: 2.4rem;
+}
+
+.price__value {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+  text-align: right;
+  font-weight: bold;
+}
+
+.price__info {
+  margin-bottom: 1rem;
+}
+
+.price__info span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 0.5rem;
+}
+
+.price__info p {
+  line-height: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.price__info ul li:before {
+  content: "-";
+  display: inline-block;
+  margin: 0 0.5rem;
 }
 
 .advantages {
@@ -567,7 +723,7 @@ main {
 }
 
 .map {
-  width: 100%;
+  width: 40%;
 }
 
 .map iframe {
@@ -583,6 +739,9 @@ main {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   font-size: 2rem;
