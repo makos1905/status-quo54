@@ -89,7 +89,7 @@ $('#btnEntity').on('click', function () {
   $('#btnPersonal').removeClass('price__button-active');
   $('#servPersonal').addClass('hidden');
   $('#btnEntity').addClass('price__button-active');
-  $('#servEntity').removegitClass('hidden');
+  $('#servEntity').removeClass('hidden');
 });
 
 $('.policyOk').on('click', function () {
