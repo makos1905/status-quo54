@@ -91,3 +91,11 @@ $('#btnEntity').on('click', function () {
   $('#btnEntity').addClass('price__button-active');
   $('#servEntity').removegitClass('hidden');
 });
+
+$('.policyOk').on('click', function () {
+  $('#policy').removeClass('hidden');
+});
+
+$('#policyOk').on('click', function () {
+  $('#policy').addClass('hidden');
+});

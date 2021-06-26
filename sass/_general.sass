@@ -434,5 +434,59 @@ main
     margin-left: auto
     cursor: pointer
 
+.policy
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  display: flex
+  justify-content: center
+  align-items: center
+  color: $first
+  &__wrap
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    width: 80%
+    background-color: rgba($third, 1)
+    padding: 1rem 2rem
+    border: 5px solid $first
+    border-radius: 5px
+  &__title
+    flex: 0 0 100%
+    font-weight: bold
+    text-align: center
+    margin-bottom: 2rem
+  &__content
+    flex: 0 0 100%
+    height: 80vh
+    overflow-x: hidden
+    border: 1px solid $first
+    padding: 1rem
+    border-radius: 5px
+    margin-bottom: 2rem
+    & ol
+      list-style: none
+      counter-reset: li
+      & ol
+        padding-left: 1rem
+    & li:before
+      counter-increment: li
+      content: counters(li, ".") " "
+  &__text
+    font-size: 1.5rem
+    margin-bottom: 0.5rem
+    &-title
+      font-size: 1.6rem
+      font-weight: bold
+      margin-top: 2rem
+      margin-bottom: 1rem
+  &__ok
+    font-weight: bold
+    background-color: $fourth
+    padding: 0.5rem 1rem
+    border: 2px solid $first
+    border-radius: 5px
 .hidden
   display: none
