@@ -55,12 +55,14 @@ main
     align-items: center
     cursor: pointer
     padding: 1rem
+    &-active
+      background-color: $first
     & h2
       font-size: 2rem
+      line-height: 1.5rem
       text-align: center
       font-weight: bold
       text-transform: uppercase
-      margin-left: 1rem
   &__icon
     width: 5rem
     display: flex
@@ -204,9 +206,19 @@ main
     border: 0.5rem solid $first
     border-radius: 1rem
     margin-bottom: 0.5rem
-  &__title
+  &__types
+    display: flex
+    justify-content: space-evenly
+  &__button
+    font-size: 2rem
     font-weight: bold
-    margin-bottom: 2rem
+    padding: 1rem
+    border-radius: 1rem
+    border: 1px solid $first
+    &-active
+      background-color: $fourth
+      color: $first
+      border: 2px solid $first
   &__type
     margin-bottom: 3rem
     &:last-child

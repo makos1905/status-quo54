@@ -51,7 +51,7 @@
       <main>
         <nav class="nav">
           <div class="nav__menu">
-            <div id="tab-services" class="nav__item">
+            <div id="tab-services" class="nav__item nav__item-active">
               <h2>Услуги</h2>
             </div>
             <!-- /.nav__item -->
@@ -377,8 +377,12 @@
 
         <section id="content-price" class="section price hidden">
           <div class="price__content">
-            <div class="price__type">
-              <h3 class="price__title">Для физических лиц</h3>
+            <div class="price__types">
+              <button id="btnPersonal" class="price__button price__button-active">Для физических лиц</button>
+              <button id="btnEntity" class="price__button">Для юридических лиц</button>
+            </div>
+            <!-- /.price__types -->
+            <div id="servPersonal" class="price__type">
               <div class="price__position">
                 <h4 class="price__name">Устная консультация</h4>
                 <!-- /.price__name -->
@@ -540,8 +544,7 @@
               <!-- /.price__position -->
             </div>
             <!-- /.price__type -->
-            <div class="price__type">
-              <h3 class="price__title">Для юридических лиц</h3>
+            <div id="servEntity" class="price__type hidden">
               <div class="price__position">
                 <h4 class="price__name">Устная консультация по вопросам, не требующим предварительного изучения
                   документов</h4>

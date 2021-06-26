@@ -53,18 +53,41 @@ $(document).ready(function () {
 //Табы
 $('#tab-services').on('click', function () {
   $('#content-services').removeClass('hidden');
+  $('#tab-services').addClass('nav__item-active');
   $('#content-price').addClass('hidden');
+  $('#tab-price').removeClass('nav__item-active');
   $('#content-contacts').addClass('hidden');
+  $('#tab-contacts').removeClass('nav__item-active');
 });
 
 $('#tab-price').on('click', function () {
   $('#content-services').addClass('hidden');
+  $('#tab-services').removeClass('nav__item-active');
   $('#content-price').removeClass('hidden');
+  $('#tab-price').addClass('nav__item-active');
   $('#content-contacts').addClass('hidden');
+  $('#tab-contacts').removeClass('nav__item-active');
 });
 
 $('#tab-contacts').on('click', function () {
   $('#content-services').addClass('hidden');
+  $('#tab-services').removeClass('nav__item-active');
   $('#content-price').addClass('hidden');
+  $('#tab-price').removeClass('nav__item-active');
   $('#content-contacts').removeClass('hidden');
+  $('#tab-contacts').addClass('nav__item-active');
+});
+
+$('#btnPersonal').on('click', function () {
+  $('#btnPersonal').addClass('price__button-active');
+  $('#servPersonal').removeClass('hidden');
+  $('#btnEntity').removeClass('price__button-active');
+  $('#servEntity').addClass('hidden');
+});
+
+$('#btnEntity').on('click', function () {
+  $('#btnPersonal').removeClass('price__button-active');
+  $('#servPersonal').addClass('hidden');
+  $('#btnEntity').addClass('price__button-active');
+  $('#servEntity').removegitClass('hidden');
 });

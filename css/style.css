@@ -193,12 +193,16 @@ main input[type=radio] {
   padding: 1rem;
 }
 
+.nav__item-active {
+  background-color: #102c54;
+}
+
 .nav__item h2 {
   font-size: 2rem;
+  line-height: 1.5rem;
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
-  margin-left: 1rem;
 }
 
 .nav__icon {
@@ -448,9 +452,27 @@ main input[type=radio] {
   margin-bottom: 0.5rem;
 }
 
-.price__title {
+.price__types {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.price__button {
+  font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid #102c54;
+}
+
+.price__button-active {
+  background-color: #fffd00;
+  color: #102c54;
+  border: 2px solid #102c54;
 }
 
 .price__type {
