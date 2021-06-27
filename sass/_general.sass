@@ -22,6 +22,14 @@ h2
 h3
   font-size: 2.5rem
 
+a
+  display: flex
+  align-items: center
+  & img
+    width: 30px
+    height: 30px
+    margin-right: 1rem
+
 main
   display: flex
   flex-wrap: wrap
@@ -91,14 +99,12 @@ main
   width: 100%
   display: flex
   background: rgba($first, 1)
-  &__title
-    display: flex
-    flex-direction: column
-    justify-content: space-between
-    & h2
-      text-transform: lowercase
+  &__logo
+    flex: 0 1 30%
+    & img
+      width: 100%
   &__contacts
-    width: 35%
+    width: 40%
     display: flex
     justify-content: end
     flex-wrap: wrap
@@ -110,6 +116,8 @@ main
     justify-content: space-between
     margin-bottom: 1rem
   &__mail
+    display: flex
+    align-items: center
     margin-left: auto
 
 .contacts
@@ -404,10 +412,14 @@ main
     padding: 1rem
     border-bottom: 1px solid $second
   &__dev
+    display: flex
+    justify-content: center
     color: $third
     font-size: 1.2rem
     text-align: center
     padding: 1rem
+    & span
+      display: flex
 
 .modal
   position: fixed

@@ -9,12 +9,17 @@
 @media screen and ( max-width: 768px )
   html, body
     font-size: $fz*0.5
-
+  a
+    & span
+      display: none
   .header
+    &__logo
+      flex: 0 1 50%
+    &__contacts
+      width: 20%
+      flex-wrap: nowrap
     &__phones
-      flex-direction: column
-      align-items: end
-
+      flex-direction: row
   .form
     &__img, &__name
       display: none
@@ -39,4 +44,8 @@
     font-size: 3.5rem
   h2
     font-size: 2rem
+
+  .callback
+    right: 2%
+    bottom: 5%
 // @media screen and ( max-width: 320px )

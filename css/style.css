@@ -128,6 +128,21 @@ h3 {
   font-size: 2.5rem;
 }
 
+a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+a img {
+  width: 30px;
+  height: 30px;
+  margin-right: 1rem;
+}
+
 main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -256,25 +271,18 @@ main input[type=radio] {
   background: #102c54;
 }
 
-.header__title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.header__logo {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 30%;
+          flex: 0 1 30%;
 }
 
-.header__title h2 {
-  text-transform: lowercase;
+.header__logo img {
+  width: 100%;
 }
 
 .header__contacts {
-  width: 35%;
+  width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -301,6 +309,12 @@ main input[type=radio] {
 }
 
 .header__mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: auto;
 }
 
@@ -772,10 +786,22 @@ main input[type=radio] {
 }
 
 .footer__dev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #d1d1d1;
   font-size: 1.2rem;
   text-align: center;
   padding: 1rem;
+}
+
+.footer__dev span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .modal {
@@ -1040,14 +1066,24 @@ main input[type=radio] {
   html, body {
     font-size: 5px;
   }
+  a span {
+    display: none;
+  }
+  .header__logo {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+  }
+  .header__contacts {
+    width: 20%;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
   .header__phones {
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: end;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .form__img, .form__name {
     display: none;
@@ -1076,5 +1112,9 @@ main input[type=radio] {
   }
   h2 {
     font-size: 2rem;
+  }
+  .callback {
+    right: 2%;
+    bottom: 5%;
   }
 }
