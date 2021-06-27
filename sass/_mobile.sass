@@ -10,8 +10,9 @@
   html, body
     font-size: $fz*0.5
   a
-    & span
-      display: none
+    &[href='tel:+79069097890'], &[href='https://wa.me/79138939287'], &[href='mailto:ntolstykina@status-quo54.ru']
+      & span
+        display: none
   .header
     &__logo
       flex: 0 1 50%
@@ -19,6 +20,7 @@
       width: 20%
       flex-wrap: nowrap
     &__phones
+      flex: none
       flex-direction: row
   .form
     &__img, &__name
