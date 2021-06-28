@@ -1,0 +1,31 @@
+{
+  "name": "status-quo54",
+  "version": "2.0.0",
+  "description": "Юридическая компания СТАТУС-КВО",
+  "main": "none",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/makos1905/start-template.git"
+  },
+  "author": "makos1905",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/makos1905/start-template/issues"
+  },
+  "homepage": "https://github.com/makos1905/start-template#readme",
+  "devDependencies": {
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-fonter": "^0.3.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-ttf2woff": "^1.1.1",
+    "gulp-ttf2woff2": "^4.0.1",
+    "gulp-uglify-es": "^2.0.0"
+  }
+}
